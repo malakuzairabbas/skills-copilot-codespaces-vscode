@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2 Solution</title>
+    <link rel="stylesheet" href="mode2_solution.css">
+</head>
+<body>
+    <h1>Our Menu</h1>
+    
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="section">
+                <div class="section-title" id="chicken">Chicken</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="section">
+                <div class="section-title" id="beef">Beef</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="section">
+                <div class="section-title" id="sushi">Sushi</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+CSS 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 1.75em;
+}
+
+.row {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.section {
+    position: relative;
+    background-color: #d3d3d3;
+    border: 1px solid black;
+    margin: 15px;
+    padding: 40px 15px 15px 15px;
+}
+
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-size: 1.25em;
+    padding: 5px;
+}
+
+#chicken {
+    background-color: #ff9999;
+}
+
+#beef {
+    background-color: #cc3333;
+    color: white;
+}
+
+#sushi {
+    background-color: #e6e600;
+}
+
+/* Desktop View */
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        float: left;
+        width: 50%;
+    }
+    .col-md-12 {
+        float: left;
+        width: 100%;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+    .col-sm-12 {
+        float: left;
+        width: 100%;
+    }
+}
